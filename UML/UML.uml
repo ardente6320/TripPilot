@@ -8719,7 +8719,6 @@
 <XPD:REF name="Model">yPUZwbRc8Ue753VtubPqsQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="q0ynuXEBK0Oly2sZV3CnPAAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
 <XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
@@ -8810,7 +8809,6 @@
 <XPD:REF name="Model">meLyACmuS0GDB6O+vPpYMQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="Vn1dWag8o0i0ORtcHE8gwgAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
 <XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
@@ -8901,7 +8899,6 @@
 <XPD:REF name="Model">wQzB2IS67kSstIxBJ/OcHwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="Mrz0mir9W0q5//hbExNL4wAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
 <XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
@@ -8992,7 +8989,6 @@
 <XPD:REF name="Model">2N6gqO/2tkeG4VbnUvyDHQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="NqJrEn6XxEK1hzqvK2O38QAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
 <XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
@@ -9000,7 +8996,6 @@
 <XPD:REF name="Model">yxhvIQ7ZY0+peNH5fXZhPwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="6s50P83R+kKDrpmxUwNZUwAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
 <XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
@@ -9091,7 +9086,6 @@
 <XPD:REF name="Model">jzrUavjqfUCv0dF6FcLoWQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="QXFn0iuu8k2trR3fBQH5AQAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
 <XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
@@ -9436,7 +9430,6 @@
 <XPD:REF name="Model">RccWkDoLJk+NBKJvhsz9hwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="pjzrczUIhUamNcb7VtzwhAAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
 <XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
@@ -13871,7 +13864,7 @@
 <XPD:OBJ name="OwnedViews[0]" type="UMLClassView" guid="mw/Jwdprgk2QZCXntk6U3gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">1044</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">1040</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">76</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">203</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">147</XPD:ATTR>
@@ -16432,7 +16425,7 @@
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">1246,152;1364,152</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1242,152;1364,152</XPD:ATTR>
 <XPD:REF name="Model">FZxOaMkgsUe0ZLkdvlUluQAA</XPD:REF>
 <XPD:REF name="Head">TB1PFPtdaESLxsHyA0U7KwAA</XPD:REF>
 <XPD:REF name="Tail">mw/Jwdprgk2QZCXntk6U3gAA</XPD:REF>
@@ -18149,12 +18142,14 @@
 <XPD:REF name="Owner">9dwsn/RlkkGhGh9QKP+LmwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Attributes[3]" type="UMLAttribute" guid="jS8JwQefKUm7A8g9AQv2mgAA">
-<XPD:ATTR name="Name" type="string">registerBtn</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">register_btn</XPD:ATTR>
+<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">Button</XPD:ATTR>
 <XPD:REF name="Owner">9dwsn/RlkkGhGh9QKP+LmwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Attributes[4]" type="UMLAttribute" guid="fCxX5fwmSUO3+6Vf+ada0QAA">
-<XPD:ATTR name="Name" type="string">findPasswordBtn</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">findPassword_btn</XPD:ATTR>
+<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">Button</XPD:ATTR>
 <XPD:REF name="Owner">9dwsn/RlkkGhGh9QKP+LmwAA</XPD:REF>
 </XPD:OBJ>
@@ -21218,8 +21213,8 @@
 <XPD:REF name="Participant">SStVh7JZjEan3FLuMsRN+AAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">xa91X0gd3kic6XEWoUFPAwAA</XPD:REF>
-<XPD:REF name="Views[1]">LoLRL4voUUiBbvebm/yJOQAA</XPD:REF>
-<XPD:REF name="Views[2]">bG8cHz62+Um+4QASH+rfBwAA</XPD:REF>
+<XPD:REF name="Views[1]">bG8cHz62+Um+4QASH+rfBwAA</XPD:REF>
+<XPD:REF name="Views[2]">LoLRL4voUUiBbvebm/yJOQAA</XPD:REF>
 <XPD:REF name="Views[3]">3tt2rptsOkyBYZ06NhQgLgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="fWc0eTGcK02o2Jp6UrssfQAA">
@@ -21227,8 +21222,8 @@
 <XPD:REF name="Participant">Ue5Z7TdCRUKqSF5setbD/AAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">rUyvux56LkOpGXeSPNY3iAAA</XPD:REF>
-<XPD:REF name="Views[1]">DUynVq0z+EuSAbne0qC7dAAA</XPD:REF>
-<XPD:REF name="Views[2]">TGOS62U/x0a4IhtNOzvaJwAA</XPD:REF>
+<XPD:REF name="Views[1]">TGOS62U/x0a4IhtNOzvaJwAA</XPD:REF>
+<XPD:REF name="Views[2]">DUynVq0z+EuSAbne0qC7dAAA</XPD:REF>
 <XPD:REF name="Views[3]">x7nZ1lnYkk+RHminl2W9ogAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
