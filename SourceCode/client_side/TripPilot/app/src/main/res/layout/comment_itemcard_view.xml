@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/comment_item"
+    android:layout_marginTop="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_writer"
+        android:text="writer"
+        android:textColor="#000000"/>
+
+    <RatingBar
+        android:id="@+id/comment_star_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:stepSize="0.5"
+        android:layout_marginLeft="5dp"
+        android:isIndicator="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_score"
+        android:text="@string/score_initial_value"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/comment_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="test"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="right"
+        android:id="@+id/modify_comment_visibility"
+        android:visibility="gone">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/delete_comment_btn"
+            android:text="삭제하기"
+            android:textSize="12dp"
+            android:textColor="#00A1FF"
+            android:background="#00FF0000"/>
+        <Button
+            android:id="@+id/modify_comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="수정하기"
+            android:textSize="12dp"
+            android:textColor="#00A1FF"
+            android:background="#00FF0000"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6E6E6"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>

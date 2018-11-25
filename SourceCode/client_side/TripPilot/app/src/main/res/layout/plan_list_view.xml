@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/plan_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계획"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@+id/plan_list_text"
+        android:id="@+id/add_plan_btn">
+
+        <ImageView
+            android:id="@+id/plan_list_imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/usagehistory"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/plan_list_imageView"
+            android:text="계획 추가하기"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressing_my_plan_list"
+        android:layout_below="@+id/add_plan_btn"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계획이 없습니다."
+        android:id="@+id/empty_my_plan_list"
+        android:layout_below="@+id/add_plan_btn"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plan_list"
+        android:layout_below="@+id/add_plan_btn"
+        android:layout_marginTop="15dp"/>
+</RelativeLayout>
+

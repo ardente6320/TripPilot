@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="검색"
+            android:id="@+id/search_plan_edt"
+            android:textSize="15dp"
+            android:singleLine="true"/>
+
+        <ImageButton
+            android:id="@+id/search_plan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/search_plan_edt"
+            android:layout_alignEnd="@+id/tableLayout3"
+            android:layout_toEndOf="@+id/search_plan_edt"
+            android:src="@drawable/search_icon"
+            android:background="#00FF0000"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableLayout3"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/search_plan_edt">
+                <TableRow>
+                        <Spinner
+                            android:layout_width="125dp"
+                            android:layout_height="40dp"
+                            style="?android:attr/dropDownItemStyle"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/category_plan_area"/>
+
+                        <Spinner
+                            android:layout_width="125dp"
+                            android:layout_height="40dp"
+                            style="?android:attr/dropDownItemStyle"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/category_plan_city"/>
+
+                        <Spinner
+                            android:layout_width="125dp"
+                            android:layout_height="40dp"
+                            style="?android:attr/dropDownItemStyle"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/category_plan_thema"/>
+                </TableRow>
+        </TableLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searched_plan_progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tableLayout3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="검색 결과가 없습니다."
+            android:id="@+id/no_search_plan_item"
+            android:gravity="center"
+            android:layout_below="@+id/tableLayout3"
+            android:visibility="gone"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searched_plan_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tableLayout3" />
+</RelativeLayout>

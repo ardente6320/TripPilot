@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="아이디/이메일"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/id_edt"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:hint="아이디를 입력하세요" />
+
+    <Button
+        android:id="@+id/overlap_btn"
+        android:background="#00ff0000"
+        android:textColor="#00a1ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/id_edt"
+        android:layout_toEndOf="@+id/id_edt"
+        android:layout_toRightOf="@+id/id_edt"
+        android:text="중복확인" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/id_edt"
+        android:text="비밀번호"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/password_edt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/password_edt"
+        android:text="비밀번호 확인"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/verify_edt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:hint="비밀번호를 한 번더 입력하세요"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/verify_edt"
+        android:text="나의 관심사(최소 1개)"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:id="@+id/textView3" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:id="@+id/checkable"
+        android:layout_centerHorizontal="true">
+    <CheckBox
+        android:layout_marginTop="10dp"
+        android:id="@+id/attraction_chk"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="관광지"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:layout_marginTop="10dp"
+        android:id="@+id/cultural_faclity_chk"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@id/attraction_chk"
+        android:text="문화시설"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/event_chk"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/attraction_chk"
+        android:layout_alignStart="@+id/attraction_chk"
+        android:layout_below="@+id/attraction_chk"
+        android:layout_marginTop="21dp"
+        android:text="공연/행사"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/shopping_chk"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/cultural_faclity_chk"
+        android:layout_alignEnd="@+id/cultural_faclity_chk"
+        android:layout_marginTop="21dp"
+        android:text="쇼핑"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/leports_chk"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/event_chk"
+        android:layout_alignStart="@+id/event_chk"
+        android:layout_below="@+id/event_chk"
+        android:layout_marginTop="21dp"
+        android:text="레포츠"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/cafeteria_chk"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/shopping_chk"
+        android:layout_marginTop="21dp"
+        android:layout_alignEnd="@id/cultural_faclity_chk"
+        android:text="음식"
+        android:textSize="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/checkable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+    <Button
+        android:id="@+id/join_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#00ff0000"
+        android:text="가입하기"
+        android:textColor="#00a1ff"
+        android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/retire_btn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/join_btn"
+            android:background="#00ff0000"
+            android:text="탈퇴하기"
+            android:textColor="#FA5858"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

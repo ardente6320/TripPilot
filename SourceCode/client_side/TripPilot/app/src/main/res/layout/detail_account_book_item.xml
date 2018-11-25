@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_accountbook_item">
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:textColor="#000000"
+        android:text="에모이쌀국수"
+        android:textSize="15dp"
+        android:id="@+id/ABUseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/ABUseMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/ABUseTitle"
+        android:layout_toRightOf="@+id/ABUseTitle"
+        android:text="0"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ABUseMoney"
+        android:text="원"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/ABshowDetail"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/dropdown"/>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/setVisible"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ABUseTitle">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/ttype"
+            android:textColor="#BDBDBD"
+            android:text="입/출금:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/ttype"
+            android:textColor="#BDBDBD"
+            android:text="입금"
+            android:textAlignment="center"
+            android:id="@+id/NBTypetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/NBUseTypetv"
+            android:textColor="#BDBDBD"
+            android:text="방법:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#BDBDBD"
+            android:id="@+id/NBUseTypetv"
+            android:textAlignment="center"
+            android:text="카드"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/NBSpendMoneytv"
+            android:textColor="#BDBDBD"
+            android:text="금액:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/NBSpendMoneytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/won1"
+            android:layout_marginRight="3dp"
+            android:text="10000"
+            android:textAlignment="center"
+            android:textColor="#BDBDBD" />
+        <TextView
+            android:id="@+id/won1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="원"
+            android:textColor="#BDBDBD"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/modify_detail_accountbook_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/NBSpendMoneytv"
+            android:background="#00ff0000"
+            android:textColor="#00A1FF"
+            android:text="수정하기" />
+
+        <Button
+            android:id="@+id/delete_detail_accountbook_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/modify_detail_accountbook_item"
+            android:layout_alignBottom="@+id/modify_detail_accountbook_item"
+            android:layout_marginEnd="17dp"
+            android:layout_toStartOf="@+id/modify_detail_accountbook_item"
+            android:background="#00ff0000"
+            android:textColor="#00A1FF"
+            android:text="삭제하기" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/detail_ab_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setVisible"
+        android:background="#E6E6E6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+</LinearLayout>

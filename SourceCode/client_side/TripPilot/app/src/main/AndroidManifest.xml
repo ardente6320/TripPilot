@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trippilot.trippilot">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:name="android.hardware.location.gps" />
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/amis_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/amis_launcher_round"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="areaCode" android:value="@string/areaCode"></meta-data>
+        <meta-data android:name="detailCommon" android:value="@string/detailCommon"></meta-data>
+        <meta-data android:name="searchKeyword" android:value="@string/searchKeyword"></meta-data>
+        <meta-data android:name="areaBasedList" android:value="@string/areaBasedList"></meta-data>
+        <meta-data android:name="select_member" android:value="@string/select_member_url"></meta-data>
+        <meta-data android:name="insert_member" android:value="@string/insert_member_url"></meta-data>
+        <meta-data android:name="select_interest" android:value="@string/select_interest_url"></meta-data>
+        <meta-data android:name="update_member" android:value="@string/update_member_url"></meta-data>
+        <meta-data android:name="delete_member" android:value="@string/delete_member_url"></meta-data>
+        <meta-data android:name="select_accountbook" android:value="@string/select_accountbook_url"></meta-data>
+        <meta-data android:name="select_accountbook_list" android:value="@string/select_accountbook_list_url"></meta-data>
+        <meta-data android:name="insert_accountbook" android:value="@string/insert_accountbook_url"></meta-data>
+        <meta-data android:name="update_accountbook" android:value="@string/update_accountbook_url"></meta-data>
+        <meta-data android:name="delete_accountbook" android:value="@string/delete_accountbook_url"></meta-data>
+        <meta-data android:name="insert_usagehistory" android:value="@string/insert_usagehistory_url"></meta-data>
+        <meta-data android:name="update_usagehistory" android:value="@string/update_usagehistory_url"></meta-data>
+        <meta-data android:name="delete_usagehistory" android:value="@string/delete_usagehistory_url"></meta-data>
+        <meta-data android:name="select_plan" android:value="@string/select_plan_url"></meta-data>
+        <meta-data android:name="search_plan" android:value="@string/search_plan_url"></meta-data>
+        <meta-data android:name="insert_plan" android:value="@string/insert_plan_url"></meta-data>
+        <meta-data android:name="delete_plan" android:value="@string/delete_plan_url"></meta-data>
+        <meta-data android:name="update_plan_scope" android:value="@string/update_plan_scope_url"></meta-data>
+        <meta-data android:name="update_plan_title" android:value="@string/update_plan_title_url"></meta-data>
+        <meta-data android:name="select_popular_plan" android:value="@string/select_popular_plan_url"></meta-data>
+        <meta-data android:name="select_recommend_plan" android:value="@string/select_recommend_plan_url"></meta-data>
+        <meta-data android:name="select_schedule" android:value="@string/select_schedule_url"></meta-data>
+        <meta-data android:name="insert_schedule" android:value="@string/insert_schedule_url"></meta-data>
+        <meta-data android:name="update_schedule" android:value="@string/update_schedule_url"></meta-data>
+        <meta-data android:name="delete_schedule" android:value="@string/delete_schedule_url"></meta-data>
+        <meta-data android:name="delete_location" android:value="@string/delete_location_url"></meta-data>
+        <meta-data android:name="insert_location" android:value="@string/insert_location_url"></meta-data>
+        <meta-data android:name="select_comment" android:value="@string/select_comment_url"></meta-data>
+        <meta-data android:name="insert_comment" android:value="@string/insert_comment_url"></meta-data>
+        <meta-data android:name="delete_comment" android:value="@string/delete_comment_url"></meta-data>
+        <meta-data android:name="update_comment" android:value="@string/update_comment_url"></meta-data>
+        <meta-data android:name="select_star_rating" android:value="@string/select_star_rating_url"></meta-data>
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="5de681d3d0891110d35da799da3b3342"/>
+        <activity android:name=".LoginView"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MemberView"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PlanView"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ModifyPlanView"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LocationDetailView"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AccountBookDetailView"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

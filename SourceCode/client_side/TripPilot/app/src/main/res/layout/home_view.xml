@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="인기 플랜을 확인하세요"
+        android:textSize="20dp"
+        android:textColor="#FA5858" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인기있는 플랜이 없습니다."
+            android:id="@+id/empty_popular_plan"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/populer_progressbar"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/popular_plan_list"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="최근 나의 플랜을 확인하세요"
+        android:textSize="20dp"
+        android:textColor="#00a1ff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최근 나의 플랜이 없습니다."
+            android:id="@+id/empty_my_plan"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"/>
+        <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/my_plan_progressbar"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressing_trip_list" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="추천 플랜을 확인하세요"
+            android:textSize="20dp"
+            android:textColor="#31B404"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추천하는 플랜이 없습니다."
+            android:id="@+id/empty_recommend_plan"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/recommend_progressbar"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recommend_plan_list" />
+    </LinearLayout>
+</ScrollView>

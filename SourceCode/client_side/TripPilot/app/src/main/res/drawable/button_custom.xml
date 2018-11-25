@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <!-- SHADOW -->
+            <item>
+                <shape>
+                    <solid android:color="#848484"/>
+                    <!-- alttan gölge -->
+                    <corners android:radius="9dp"/>
+                </shape>
+            </item>
+            <!-- BUTTON alttan gölge
+              android:right="5px" to make it round-->
+            <item
+                android:bottom="3px"
+                >
+                <shape>
+                    <padding android:bottom="5dp"/>
+                    <solid
+                        android:color="#3498DB"/>
+                    <corners
+                        android:radius="5dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- SHADOW -->
+            <item>
+                <shape>
+                    <!-- alttan gölge -->
+                    <corners android:radius="9dp"/>
+                </shape>
+            </item>
+            <!-- BUTTON alttan gölge
+              android:right="5px" to make it round-->
+            <item
+                android:bottom="3px"
+                >
+                <shape>
+                    <padding android:bottom="5dp"/>
+                    <solid
+                        android:color="#577E98"/>
+                    <corners
+                        android:radius="5dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

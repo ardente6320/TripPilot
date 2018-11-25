@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/mplan_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="test"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/recommend_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/schedule_optimization_btn"
+        android:background="@drawable/selector_recommend"
+        android:layout_marginRight="5dp"/>
+
+    <ImageButton
+        android:id="@+id/schedule_optimization_btn"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/done_btn"
+        android:background="@drawable/selector_optimization" />
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#00FF0000"
+        android:text="DONE"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/plan_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수정"
+        android:id="@+id/plan_modify_btn"
+        android:background="#00FF0000"
+        android:textColor="#00A1FF"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plan_bring_btn"
+            android:background="#00FF0000"
+            android:text="@string/bring"
+            android:textColor="#00A1FF"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressing_schedule_list"
+        android:layout_below="@+id/plan_title"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일정이 없습니다."
+            android:id="@+id/empty_schedule_list"
+            android:layout_below="@+id/plan_title"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:visibility="gone"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/plan_scheduleList"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/plan_title"
+        android:layout_marginTop="10dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plan_scheduleList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="*"
+        android:id="@+id/relativeLayout2">
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/plan_nav_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/direction"
+                    android:background="@drawable/selector_button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/plan_map_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/nav_icon"
+                    android:background="@drawable/selector_button"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/plan_comment_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/comment_icon"
+                    android:background="@drawable/selector_button"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+            </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/relativeLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/plan_score"
+            android:layout_alignBottom="@+id/plan_score"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:text="@string/scoreText"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <RatingBar
+            android:id="@+id/plan_star_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:isIndicator="true"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/plan_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="19dp"
+            android:text="@string/score_initial_value"
+            android:textColor="#FA5858"
+            android:textSize="25dp" />
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressing_comment_list"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:gravity="center"
+            android:id="@+id/empty_plan_comment"
+            android:layout_marginTop="10dp"
+            android:text="댓글이 없습니다."
+            android:visibility="gone"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/plan_commentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</ScrollView>

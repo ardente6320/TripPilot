@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="추천"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/recommend_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/recommend_title"
+        android:background="#E6E6E6"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/view3" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_recommend_area"
+        android:layout_below="@id/view3"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus"
+            android:id="@+id/imageView3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지역 추가"
+            android:layout_toEndOf="@id/imageView3"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recommend_area_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_recommend_area"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/recommend_area_list"
+        android:layout_below="@+id/recommend_area_list"
+        android:layout_marginTop="11dp"
+        android:id="@+id/recomment_amount"
+        android:text="추천 수" />
+
+    <Spinner
+        android:id="@+id/recommend_amount_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/recomment_amount"
+        android:layout_toEndOf="@+id/recomment_amount"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/view3"
+        android:layout_below="@+id/recommend_amount_spinner"
+        android:text="확인"
+        android:layout_marginTop="10dp"
+        android:background="#00FF0000"
+        android:textColor="#00A1FF"
+        android:textStyle="bold"
+        android:id="@+id/confirm_recommend" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel_recommend"
+        android:layout_alignBaseline="@+id/confirm_recommend"
+        android:layout_alignBottom="@+id/confirm_recommend"
+        android:layout_toStartOf="@+id/confirm_recommend"
+        android:background="#00FF0000"
+        android:textColor="#00A1FF"
+        android:textStyle="bold"
+        android:text="취소" />
+</RelativeLayout>
