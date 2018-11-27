@@ -48,7 +48,6 @@ import java.util.concurrent.ExecutionException;
  * Created by arden on 2018-09-11.
  */
 
-@SuppressLint("ValidFragment")
 public class SearchedLocationListView extends android.support.v4.app.Fragment implements View.OnClickListener{
     private RecyclerView search_location_list;
     private TextView no_search_item;
@@ -71,8 +70,8 @@ public class SearchedLocationListView extends android.support.v4.app.Fragment im
     int firstVisibleItem, visibleItemCount, totalItemCount;
     private Activity activity;
     private DataAddListener dataAddListener;
-    @SuppressLint("ValidFragment")
-    public SearchedLocationListView(int type, DataAddListener dataAddListener){
+
+    public void setData(int type, DataAddListener dataAddListener){
         this.type = type;
         this.dataAddListener = dataAddListener;
     }

@@ -421,7 +421,8 @@ public class PlanView extends AppCompatActivity implements View.OnClickListener,
             for(Location l :loc)
                 temp.add(l);
         }
-        final MapDialog dialog = new MapDialog(temp);
+        final MapDialog dialog = new MapDialog();
+        dialog.setLocation(temp);
         dialog.show(this.getSupportFragmentManager(), "location_map");
     }
 

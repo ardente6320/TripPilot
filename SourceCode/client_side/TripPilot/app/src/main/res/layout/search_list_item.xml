@@ -46,7 +46,7 @@
         android:layout_marginRight="10dp"
         android:src="@drawable/plus"
         android:background="#00FF0000"
-        android:visibility="visible" />
+        android:visibility="gone" />
 
     <View
         android:layout_width="match_parent"

@@ -24,12 +24,16 @@ public class SearchViewPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                if(locViewFragment ==null)
-                    locViewFragment = new SearchedLocationListView(type,null);
+                if(locViewFragment ==null) {
+                    locViewFragment = new SearchedLocationListView();
+                    locViewFragment.setData(type,null);
+                }
                 return locViewFragment;
             case 1:
-                if(plViewFragment == null)
-                    plViewFragment = new SearchedPlanListView(type);
+                if(plViewFragment == null) {
+                    plViewFragment = new SearchedPlanListView();
+                    plViewFragment.setType(type);
+                }
                 return plViewFragment;
         }
         return null;

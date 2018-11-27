@@ -43,8 +43,6 @@ import java.util.List;
 /**
  * Created by arden on 2018-09-11.
  */
-
-@SuppressLint("ValidFragment")
 public class SearchedPlanListView extends android.support.v4.app.Fragment{
     RecyclerView search_plan_list;
     SearchedPlanListAdapter adapter;
@@ -68,8 +66,7 @@ public class SearchedPlanListView extends android.support.v4.app.Fragment{
     int firstVisibleItem, visibleItemCount, totalItemCount;
     Activity activity;
     int areaNo=0,cityNo=0;
-    @SuppressLint("ValidFragment")
-    public SearchedPlanListView(int type){
+    public void setType(int type){
         this.type = type;
     }
     @Nullable

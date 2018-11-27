@@ -45,6 +45,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:textSize="15dp"
+        android:singleLine="true"
         android:hint="가계부 이름을 입력하세요"/>
 
     <Button

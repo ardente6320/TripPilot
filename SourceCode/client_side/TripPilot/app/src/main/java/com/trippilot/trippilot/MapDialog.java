@@ -20,12 +20,10 @@ import java.util.List;
 /**
  * Created by arden on 2018-11-07.
  */
-@SuppressLint("ValidFragment")
-class MapDialog extends DialogFragment implements MapView.MapViewEventListener{
+public class MapDialog extends DialogFragment implements MapView.MapViewEventListener{
     List<Location> location;
-    public MapDialog(List<Location> location){
-        this.location = location;
-    }
+
+    public void setLocation(List<Location> location){this.location = location;}
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

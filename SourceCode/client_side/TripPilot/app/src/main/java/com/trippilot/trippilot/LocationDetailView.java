@@ -149,7 +149,13 @@ public class LocationDetailView extends AppCompatActivity implements View.OnClic
             json_data = (JSONObject) json_data.get("body");
             json_data = (JSONObject) json_data.get("items");
             json_data = (JSONObject) json_data.get("item");
-            location.setContent(json_data.getString("overview"));
+            String ovStr = json_data.getString("overview");
+            ovStr = ovStr.replace("<br />","");
+            ovStr = ovStr.replace("<br>","");
+            ovStr = ovStr.replace("<strong>","");
+            ovStr = ovStr.replace("</strong>","");
+            ovStr = ovStr.replace("&nbsp;","");
+            location.setContent(ovStr);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -242,7 +248,8 @@ public class LocationDetailView extends AppCompatActivity implements View.OnClic
     private void showMapDialog() {
         List<Location> list = new ArrayList<Location>();
         list.add(location);
-        final MapDialog dialog = new MapDialog(list);
+        final MapDialog dialog = new MapDialog();
+        dialog.setLocation(list);
         dialog.show(this.getSupportFragmentManager(), "location_map");
     }
     private void showCommentDialog(){
